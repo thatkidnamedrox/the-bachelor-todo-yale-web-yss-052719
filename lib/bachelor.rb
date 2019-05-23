@@ -16,7 +16,8 @@ end
 def get_contestant_name(data, occupation)
   # code here
   name = ""
-  puts data.values.inspect
+  contestants = data.values.flatten
+  puts contestants
   name
 end
 
