@@ -17,7 +17,8 @@ def get_contestant_name(data, occupation)
   # code here
   name = ""
   contestants = data.values.flatten
-  person = contestants.find do |contestant|
+  person = 
+  contestants.find do |contestant|
     contestant["occupation"] == occupation
   end
 
