@@ -15,7 +15,7 @@ end
 
 def get_contestant_name(data, occupation)
   # code here
-  
+
   contestants = data.values.flatten
 
   person =
@@ -23,7 +23,6 @@ def get_contestant_name(data, occupation)
       contestant["occupation"] == occupation
     end
 
-  
   person["name"]
 end
 
