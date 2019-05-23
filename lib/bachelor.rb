@@ -39,7 +39,7 @@ def get_occupation(data, hometown)
 
   person =
     contestants.find do |contestant|
-      contestant["occupation"] == occupation
+      contestant["hometown"] == hometown
     end
 
   person["occupation"]
