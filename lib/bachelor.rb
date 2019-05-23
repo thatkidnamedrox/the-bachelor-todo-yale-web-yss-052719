@@ -28,6 +28,9 @@ end
 
 def count_contestants_by_hometown(data, hometown)
   # code here
+  contestants = data.values.flatten
+  hometown_people = contestants.select { |c| c["hometown"] == hometown }
+  hometown_people.length
 end
 
 def get_occupation(data, hometown)
