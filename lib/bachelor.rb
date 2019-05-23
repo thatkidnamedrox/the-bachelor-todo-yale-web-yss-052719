@@ -15,15 +15,16 @@ end
 
 def get_contestant_name(data, occupation)
   # code here
-  name = ""
+  
   contestants = data.values.flatten
-  person =
-  contestants.find do |contestant|
-    contestant["occupation"] == occupation
-  end
 
-  puts person
-  name
+  person =
+    contestants.find do |contestant|
+      contestant["occupation"] == occupation
+    end
+
+  
+  person["name"]
 end
 
 def count_contestants_by_hometown(data, hometown)
